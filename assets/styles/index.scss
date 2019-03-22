@@ -1,1 +1,46 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Rock Salt', cursive;
+}
+
+header {
+    background-color: blueviolet;
+    color: whitesmoke;
+    font-family: 'Rock Salt', cursive;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+.situation-form {
+    border: 2px solid blueviolet;
+    height: 100px;
+    margin: 40px auto;
+    padding: 10px 20px 0;
+    width: 300px;
+
+    input {
+        border: 1px solid blueviolet;
+        padding: 6px;
+        width: 250px;
+    }
+}
+
+.question-form {
+    border: 2px solid blueviolet;
+    height: 200px;
+    margin: 40px auto;
+    padding: 10px 20px 0;
+    width: 300px;
+
+    input {
+        border: 1px solid blueviolet;
+        padding: 6px;
+        width: 250px;
+    }
+
+    label {
+        padding: 6px;
+    }
+}
