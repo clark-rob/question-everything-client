@@ -8,6 +8,16 @@ const indexSituation = () => {
     })
 }
 
+// Situation Create = POST
+const createSituation = (data) => {
+    return $.ajax({
+        url: config.apiUrl + '/situations',
+        method: 'POST',
+        data
+    })
+}
+
 module.exports = {
-    indexSituation
+    indexSituation,
+    createSituation
 }

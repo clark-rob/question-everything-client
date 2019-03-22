@@ -3,7 +3,6 @@ import indexSituationBar from '../templates/index-situation.handlebars'
 
 const indexSituationSuccess = data => {
     const situations = data.situations
-    console.log(situations)
     // situations.forEach(situation => {
     //     console.log(situation.name)
     //     $('.situation-view').html(situation.name)
@@ -12,6 +11,12 @@ const indexSituationSuccess = data => {
     $('.situation-view').html(allSituations)
 }
 
+const createSituationSuccess = data => {
+    console.log(data.situation.name)
+    $('.situation-create-message').html(`What questions do you have on ${data.situation.name}?`)
+}
+
 module.exports = {
-    indexSituationSuccess
+    indexSituationSuccess,
+    createSituationSuccess
 }
