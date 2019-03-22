@@ -1,11 +1,15 @@
+import indexSituationBar from '../templates/index-situation.handlebars'
+
 
 const indexSituationSuccess = data => {
-    console.log(data.situations[0])
-    // const eachSituation = data.forEach(situation => {
+    const situations = data.situations
+    console.log(situations)
+    // situations.forEach(situation => {
     //     console.log(situation.name)
-    // });
-    // console.log(eachSituation)
-    $('.situation-view').html(data.situations[0].name)
+    //     $('.situation-view').html(situation.name)
+    // })
+    const allSituations = indexSituationBar({ situations:data.situations })
+    $('.situation-view').html(allSituations)
 }
 
 module.exports = {

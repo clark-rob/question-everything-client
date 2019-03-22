@@ -1,0 +1,10 @@
+{{#each situations as |situation|}}
+    {{!-- view each Situation --}}
+    <div class="situation-card">
+        <h3>{{situation.name}}</h3>
+        <section>
+            <li>{{situation.questions}}</li>
+        </section>
+    </div>
+    <br/>
+{{/each}}
