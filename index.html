@@ -12,19 +12,26 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
+
     <header>
       <h1>?uestion Everything</h1>
     </header>
+    
     <body>
+
+      <!-- Button to view Index of situations -->
+      <div class="situation-index">
+        <button class="situation-btn">Situations</button>
+      </div>
 
       <!-- Form to input situation -->
       <form class="situation-form">
         <label>What's the Situation?</label>
-        <input placeholder="Situation Name" type="string">
-        <input placeholder="Create" type="submit">
+        <input name="situation[name]" placeholder="Situation Name" type="string">
+        <input type="submit">
       </form>
 
-      <div class="situations-view"></div>
+      <div class="situation-view"></div>
 
       <!-- Form to input questions/ answers-->
       <form class="question-form">

@@ -1,5 +1,7 @@
 'use strict'
 
+import situationEvents from './situation/events.js'
+
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -7,5 +9,5 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('.situation-btn').on('click', situationEvents.onIndexSituation)
 })
